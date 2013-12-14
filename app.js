@@ -11,7 +11,7 @@ var path = require('path');
 
 var app = express();
 
-
+//a simple logger to log every request to the app
 var DoronLogger = function(req, res, next){
 	console.log(req.body);
 	next();
